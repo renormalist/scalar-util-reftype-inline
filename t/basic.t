@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Test::More;
 
-use Scalar::Util::reftype::Inline;
+use Scalar::Util::reftype::Inline "reftype";
 
 use Scalar::Util ();
 
