@@ -7,6 +7,8 @@ use Scalar::Util::reftype::Inline;
 use Scalar::Util ();
 
 is(reftype([]), 'ARRAY');
-is(reftype(bless []), 'ARRAY');
+my $r = bless [], "Affe";
+is(ref($r), 'Affe');
+is(reftype($r), 'ARRAY');
 
 done_testing;
