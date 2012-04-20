@@ -1,0 +1,4 @@
+.*
+!.gitignore
+Scalar-Util-reftype-Inline-*
+Debian_CPANTS.txt

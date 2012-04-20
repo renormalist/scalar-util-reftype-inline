@@ -2,6 +2,7 @@ use strict;
 use warnings;
 
 package Scalar::Util::reftype::Inline;
+# ABSTRACT: A faster reftype via inline - EXPERIMENTAL
 
 use Devel::CallChecker;
 use XSLoader;
