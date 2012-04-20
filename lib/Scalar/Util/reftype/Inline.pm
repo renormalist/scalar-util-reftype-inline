@@ -11,12 +11,9 @@ XSLoader::load(__PACKAGE__);
 
 sub reftype { die 42 }
 
-sub import {
-    $^H{ __PACKAGE__ . '/reftype' } = 1;
-    my $caller = caller;
-    no strict 'refs';
-    *{ join q{::} => $caller, 'reftype' } = \&reftype;
-}
+use Sub::Exporter -setup => {
+    exports => [qw(reftype)],
+};
 
 sub unimport {
     $^H{ __PACKAGE__ . '/reftype' } = 0;
