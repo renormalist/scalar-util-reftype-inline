@@ -1,9 +1,4 @@
-Inline.bs
-Inline.c
-Inline.o
-Makefile
-Makefile.old
-blib/
-pm_to_blib
+.*
+!.gitignore
 Scalar-Util-reftype-Inline-*
-
+Debian_CPANTS.txt
